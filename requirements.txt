@@ -1,0 +1,13 @@
+# Pinned to the versions behind every number in the Phase 1 concept proposal (September 2026).
+# Python 3.12.  Install:  pip install -r requirements.txt
+numpy==2.4.6
+scipy==1.18.0          # scipy.optimize.milp = HiGHS 1.12, the licence-free exact-MILP backend
+pandapower==3.5.4      # open networks: case33bw (IEEE 33-bus, Baran-Wu) and mv_oberrhein
+qiskit==2.5.2
+qiskit-aer==0.17.2     # noiseless statevector simulator used for every QAOA number
+pasqal-cloud==0.22.0   # Pasqal SDK, needed only by grid_submit.py / submit_to_pasqal.py
+pulser==1.8.0
+
+# Optional. The pip licence is size-limited (~2,000 variables/constraints): it solves
+# instB33 but not instC179. Without it, milp_ground_truth.py falls back to HiGHS.
+# gurobipy==13.0.3
