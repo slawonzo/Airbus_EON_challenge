@@ -33,7 +33,6 @@ limitation of the global surrogate and the trust-region refit loop that fixes it
 | `surrogate_refine.py` | Trust-region local refit loop (accept / shrink), trajectory logged |
 | `qiskit_qaoa.py` | QAOA reference in Qiskit (Ising mapping with endianness self-test), common results schema |
 | `grid_submit.py` | Pasqal submission of the same instance; thin wrapper around `submit_to_pasqal.py` |
-| `submit_to_pasqal.py` | Shared Pasqal SDK layer: interactive credential prompt (nothing on the command line, nothing in shell history), device selection, submission, result saving |
 | `grid_evaluate.py` | One evaluator for every platform: SHA-256 hash guard, true re-scoring, preference test against a uniform null with a pre-registered 5 % floor and minimum detectable effect, per-shot anytime yields, surrogate alignment |
 | `qubo_diagnostics.py` | Problem-agnostic QUBO checks behind the evaluator: symmetry check, detuning-map effectiveness check, sampling-quality preference test against a uniform baseline, coupling statistics |
 | `requirements.txt` | Pinned package versions used for all reported numbers |
